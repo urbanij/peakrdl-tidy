@@ -46,5 +46,5 @@ def check_overlapping_fields(node):
 problems = check_overlapping_fields(root)
 if problems:
     for p in problems:
-        print(f"warning: {p}")
+        print(f"error: {p}")
     sys.exit(1)
