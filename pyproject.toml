@@ -1,9 +1,17 @@
 [project]
 name = "peakrdl-tidy"
 version = "0.1.0"
-description = "Add your description here"
+description = "Lint and validate SystemRDL register models via PeakRDL"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "systemrdl-compiler>=1.32.2",
+    "peakrdl-cli>=1.2.3",
 ]
+
+[project.entry-points."peakrdl.exporters"]
+tidy = "peakrdl_tidy.__peakrdl__:Exporter"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
