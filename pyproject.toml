@@ -1,0 +1,9 @@
+[project]
+name = "peakrdl-tidy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "systemrdl-compiler>=1.32.2",
+]
